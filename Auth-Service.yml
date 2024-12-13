@@ -1,17 +1,10 @@
 spring:
-  application:
-    name: Auth-Service
-
 # to make 04_Auth_Service appln. as client to Admin server appln which is running on port no:1111 
   boot:
     admin:
       client:
         url: http://localhost:1111/
-        
-# to make 04_Auth_Service appln. as client to Congig server appln which is running on port no:2222     
-  config:
-    import: optional:configserver:http://localhost:2222/
-    
+      
 #DB configuration
   datasource:
     url: jdbc:mysql://localhost:3306/ashokit_ecomm
