@@ -25,3 +25,13 @@ management:
   
 server:
   port: 8081
+
+# application response msg to end user
+auth-service:                         # prefix
+  messages:                           # map
+    userReg: User Created
+    userRegErr: User Creation Failed
+    login: Login Successful
+    loginErr: Invalid Login Credentials 
+
+
